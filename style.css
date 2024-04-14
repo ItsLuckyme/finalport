@@ -486,43 +486,36 @@ section{
     height: auto;
 }
 
-/* Use more specific media queries to target different devices */
 @media only screen and (max-width: 1200px) {
-    /* Adjustments for smaller laptops */
 }
 
 @media only screen and (max-width: 992px) {
-    /* Adjustments for tablets */
     .about, .contact {
-        grid-template-columns: 1fr; /* Stack elements vertically on smaller screens */
+        grid-template-columns: 1fr;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    /* Adjustments for landscape phones and smaller tablets */
     header {
-        padding: 12px 5%; /* Adjust padding */
+        padding: 12px 5%;
     }
     .navlist {
-        flex-direction: column; /* Stack nav items vertically */
+        flex-direction: column;
     }
     .navlist a {
-        margin: 10px 0; /* Adjust margin for vertical stacking */
+        margin: 10px 0;
     }
 }
 
 @media only screen and (max-width: 576px) {
-    /* Adjustments for portrait phones */
     :root {
-        --big-font: 3rem; /* Adjust root font sizes for small devices */
+        --big-font: 3rem;
         --h2-font: 2rem;
     }
     .home-text h1, .home-text h3 {
-        font-size: var(--h2-font); /* Use variable for consistency */
+        font-size: var(--h2-font);
     }
 }
-
-/* Example of using vw/vh units for font sizes */
 h1 {
-    font-size: 4vw; /* Adjust font size based on viewport width */
+    font-size: 4vw;
 }
